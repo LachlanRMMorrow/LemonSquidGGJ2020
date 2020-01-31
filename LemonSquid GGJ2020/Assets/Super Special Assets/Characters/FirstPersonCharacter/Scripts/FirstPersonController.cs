@@ -29,6 +29,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
         [SerializeField] private AudioClip m_LandSound;           // the sound played when character touches back on ground.
 
         //private RaycastHit lookingAt;
+        private int interactDistance;
         private Ray ray;
         private RaycastHit lookingAtHit;
         [SerializeField] InteractableBase lookingAt;
@@ -261,6 +262,16 @@ namespace UnityStandardAssets.Characters.FirstPerson
                 return;
             }
             body.AddForceAtPosition(m_CharacterController.velocity*0.1f, hit.point, ForceMode.Impulse);
+        }
+
+        public void WhatAmILookingAtRaycast() 
+        {
+            ray = m_Camera.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0.0f));
+
+            if (Physics.Raycast(ray, out lookingAtHit, interactDistance))
+            {
+                lookingAt = lookingAtHit.transform.GetComponent<InteractableBase>();
+            }
         }
     }
 }
