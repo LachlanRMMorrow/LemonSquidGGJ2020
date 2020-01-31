@@ -28,10 +28,10 @@ namespace UnityStandardAssets.Characters.FirstPerson
         [SerializeField] private AudioClip m_JumpSound;           // the sound played when character leaves the ground.
         [SerializeField] private AudioClip m_LandSound;           // the sound played when character touches back on ground.
 
-        private RaycastHit lookingAt;
+        //private RaycastHit lookingAt;
         private Ray ray;
         private RaycastHit lookingAtHit;
-        [SerializeField] Interactable lookingAt;
+        [SerializeField] InteractableBase lookingAt;
 
 
 
