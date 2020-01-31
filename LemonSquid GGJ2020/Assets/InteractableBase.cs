@@ -26,9 +26,25 @@ public class InteractableBase : MonoBehaviour
     }
 
 
+    public virtual bool CanInteract()
+    {
+       return true;
+    }
 
     public virtual void Interact()
     {
+        if (!InteractableManager.Instance.hasBrokenObject)
+        {
+            InteractableManager.Instance.SetBrokenObject(this);
+            return;
+        }
+
+    }
+
+
+    private void Break()
+    {
         Debug.Log("Break");    
+        
     }
 }
