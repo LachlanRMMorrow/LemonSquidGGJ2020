@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class InteractableManager : MonoBehaviour
+public class InteractableManager : SingletonBase<InteractableManager>
 {
     public string playerName = "Palmer";
     public int seed = 0;
@@ -14,6 +14,7 @@ public class InteractableManager : MonoBehaviour
 
 
     InteractableBase brokenObject;
+    public bool hasBrokenObject { get { return brokenObject != null; } }
 
 
     // Start is called before the first frame update
