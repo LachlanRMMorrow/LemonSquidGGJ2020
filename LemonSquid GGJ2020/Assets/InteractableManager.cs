@@ -13,14 +13,27 @@ public class InteractableManager : MonoBehaviour
     [SerializeField] private int spawnCount;
 
 
+    InteractableBase brokenObject;
+
+
     // Start is called before the first frame update
     void Start()
     {
+        SpawnRepairObjects();
+    }
 
-       seed = playerName.GetHashCode();
+    // Update is called once per frame
+    void Update()
+    {
+
+    }
+
+    public void SpawnRepairObjects()
+    {
+        seed = playerName.GetHashCode();
         Random.seed = seed;
 
-       spawnCount = Mathf.Clamp(spawnCount, 0, spawnPoints.Count);
+        spawnCount = Mathf.Clamp(spawnCount, 0, spawnPoints.Count);
 
         for (int i = 0; i < spawnCount; ++i)
         {
@@ -32,12 +45,6 @@ public class InteractableManager : MonoBehaviour
             }
 
         }
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
     }
 
 
@@ -53,6 +60,15 @@ public class InteractableManager : MonoBehaviour
         spawnPoints.RemoveAt(num);
         return trn;
 
+    }
+
+
+    public void SetBrokenObject(InteractableBase interactable)
+    {
+        if (brokenObject == null)
+        {
+            brokenObject = interactable;
+        }
     }
 
 
