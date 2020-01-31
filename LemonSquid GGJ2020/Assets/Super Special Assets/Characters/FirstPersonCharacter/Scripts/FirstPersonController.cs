@@ -29,7 +29,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
         [SerializeField] private AudioClip m_LandSound;           // the sound played when character touches back on ground.
 
         //private RaycastHit lookingAt;
-        private int interactDistance;
+        public int interactDistance = 10;
         private Ray ray;
         private RaycastHit lookingAtHit;
         [SerializeField] InteractableBase lookingAt;
@@ -69,7 +69,12 @@ namespace UnityStandardAssets.Characters.FirstPerson
         // Update is called once per frame
         private void Update()
         {
+            WhatAmILookingAtRaycast();
             RotateView();
+            if (Input.GetMouseButtonDown(0) && lookingAt != null) 
+            {
+                lookingAt.Interact();
+            }
             // the jump state needs to read here to make sure it is not missed
             if (!m_Jump)
             {
@@ -271,6 +276,10 @@ namespace UnityStandardAssets.Characters.FirstPerson
             if (Physics.Raycast(ray, out lookingAtHit, interactDistance))
             {
                 lookingAt = lookingAtHit.transform.GetComponent<InteractableBase>();
+            }
+            else
+            {
+                lookingAt = null;
             }
         }
     }
