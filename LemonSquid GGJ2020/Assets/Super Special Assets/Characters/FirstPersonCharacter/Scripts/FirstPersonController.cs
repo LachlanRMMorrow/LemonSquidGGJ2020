@@ -34,6 +34,8 @@ namespace UnityStandardAssets.Characters.FirstPerson
         private RaycastHit lookingAtHit;
         [SerializeField] InteractableBase lookingAt;
 
+        [SerializeField] bool lookingAtInteractable;
+        [SerializeField] Canvas UICanvas;
 
 
         private Camera m_Camera;
