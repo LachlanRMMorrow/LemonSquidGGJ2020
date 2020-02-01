@@ -1,0 +1,14 @@
+# Created by Kenney (www.kenney.nl)
+
+newmtl Stone_Brit_Gray_Dark
+Kd 0.404 0.353 0.314
+
+newmtl Wood_Medium
+Kd 0.628 0.526 0.396
+
+newmtl Burlap
+Kd 0.726 0.643 0.522
+
+newmtl Straw
+Kd 0.882 0.784 0.526
+

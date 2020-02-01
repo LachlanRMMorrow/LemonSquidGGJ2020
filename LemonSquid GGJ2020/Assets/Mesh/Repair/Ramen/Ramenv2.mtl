@@ -1,0 +1,6 @@
+# Created by Kenney (www.kenney.nl)
+
+newmtl metalPurple
+Kd 0.7448276 0.5252319 0.1658934
+map_Kd Textures/metalPurple.png
+

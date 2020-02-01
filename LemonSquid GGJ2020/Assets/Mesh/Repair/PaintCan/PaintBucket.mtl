@@ -1,0 +1,14 @@
+# Created by Kenney (www.kenney.nl)
+
+newmtl metalGreen
+Kd 0.04705879 0.8470588 0.6235294
+
+newmtl _defaultMat
+Kd 0.939 0.953 1
+
+newmtl shield
+Kd 0.18 0.196 0.259
+
+newmtl metalLight
+Kd 0.6980392 0.6862745 0.8666667
+

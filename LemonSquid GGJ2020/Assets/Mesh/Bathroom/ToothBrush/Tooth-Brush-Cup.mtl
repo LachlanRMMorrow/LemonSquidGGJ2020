@@ -1,0 +1,17 @@
+# Created by Kenney (www.kenney.nl)
+
+newmtl _defaultMat
+Kd 1 1 1
+
+newmtl custom34
+Kd 0.8 0.229 0.229
+
+newmtl custom35
+Kd 0.986 0.986 0.986
+
+newmtl custom36
+Kd 0.087 0.317 0.662
+
+newmtl shield
+Kd 0.18 0.196 0.259
+
