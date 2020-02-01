@@ -30,7 +30,6 @@ public class AudioManager : SingletonBase<AudioManager>
     // Start is called before the first frame update
     void Start()
     {
-        
         m_BGMsource.loop = true;
         //m_source = GetComponent<AudioSource>();
         BGMManager(1);
@@ -56,13 +55,16 @@ public class AudioManager : SingletonBase<AudioManager>
 
     public void PlayKazooForRealzies() 
     {
-        WinAudio();
+        StartCoroutine(WinAudio());
+        Debug.Log("KAZOO2");
     }
 
     IEnumerator WinAudio() 
     {
+        m_BGMsource.Pause();
         m_source.PlayOneShot(m_winkazoo);
         yield return new WaitForSeconds(3);
+        Debug.Log("KAZOO3");
         Application.Quit();
     }
 

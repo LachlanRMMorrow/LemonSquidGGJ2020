@@ -52,6 +52,7 @@ public class GameManager : SingletonBase<GameManager>
         }
         else 
         {
+            Debug.Log("KAZOO");
             AudioManager.Instance.PlayKazooForRealzies();
         }
     }

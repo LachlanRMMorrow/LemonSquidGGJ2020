@@ -171,6 +171,7 @@ public class InteractableManager : SingletonBase<InteractableManager>
 
                         if (CheckRepair())
                         {
+                            Debug.Log("DONE");
                             GameManager.Instance.Complete(true);
                         }
                         return true;
