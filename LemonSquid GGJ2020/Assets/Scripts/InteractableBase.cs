@@ -7,8 +7,6 @@ public class InteractableBase : MonoBehaviour
 {
     protected virtual void Setup()
     {
-        // TEMP - Used to correct for weird scale on placeholder objects
-        transform.position += Vector3.up * transform.localScale.y / 2;
     }
 
 

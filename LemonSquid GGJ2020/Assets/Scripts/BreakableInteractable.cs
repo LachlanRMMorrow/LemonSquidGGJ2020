@@ -39,12 +39,12 @@ public class BreakableInteractable : InteractableBase
     {
         Debug.Log("Break");
 
-        for (int i = 0; i < transform.childCount; ++i)
-        {
-            transform.GetChild(i).GetComponent<Rigidbody>().isKinematic = false;
-            transform.GetChild(i).GetComponent<Rigidbody>().AddForceAtPosition((transform.position - transform.GetChild(0).position) * Random.Range(10, 200), transform.position - new Vector3(0,1,0)) ;
-            transform.GetChild(i).GetComponent<BoxCollider>().enabled = true;
-        }
+      // for (int i = 0; i < transform.childCount; ++i)
+      // {
+      //     transform.GetChild(i).GetComponent<Rigidbody>().isKinematic = false;
+      //     transform.GetChild(i).GetComponent<Rigidbody>().AddForceAtPosition((transform.position - transform.GetChild(0).position) * Random.Range(10, 200), transform.position - new Vector3(0,1,0)) ;
+      //     transform.GetChild(i).GetComponent<BoxCollider>().enabled = true;
+      // }
         
 
 
