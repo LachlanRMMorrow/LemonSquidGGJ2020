@@ -35,6 +35,7 @@ public class SplashScreen : MonoBehaviour
         {
             PlayerPrefs.SetString("PlayerName", playerName.text);
             Debug.Log("yeetus completus");
+            StartCoroutine(Delay());
         }
     }
 }
