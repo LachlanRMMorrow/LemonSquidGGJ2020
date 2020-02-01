@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &201927123386845745
+--- !u!1 &3797029318293763050
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,52 +8,52 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 3789280453419841570}
-  - component: {fileID: -1249924406706328016}
-  - component: {fileID: 6848226867136129002}
-  - component: {fileID: -4195503633256637892}
+  - component: {fileID: 210151670837035513}
+  - component: {fileID: 6448839303986778231}
+  - component: {fileID: 5924369391535917506}
+  - component: {fileID: 6093901017134382646}
   m_Layer: 0
-  m_Name: PaintBucket
+  m_Name: Nail
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &3789280453419841570
+--- !u!4 &210151670837035513
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 201927123386845745}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 17.54, y: 0, z: 7.878}
+  m_GameObject: {fileID: 3797029318293763050}
+  m_LocalRotation: {x: -0.5880183, y: -0.15755875, z: -0.2053346, w: 0.76632077}
+  m_LocalPosition: {x: 20.113, y: 1.193, z: 6.721}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 3646937948941173712}
+  - {fileID: 351323738758593035}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &-1249924406706328016
+  m_LocalEulerAnglesHint: {x: -75, y: 0, z: -30.000002}
+--- !u!65 &6448839303986778231
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 201927123386845745}
+  m_GameObject: {fileID: 3797029318293763050}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!54 &6848226867136129002
+--- !u!54 &5924369391535917506
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 201927123386845745}
+  m_GameObject: {fileID: 3797029318293763050}
   serializedVersion: 2
   m_Mass: 1
   m_Drag: 0
@@ -63,21 +63,21 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &-4195503633256637892
+--- !u!114 &6093901017134382646
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 201927123386845745}
-  m_Enabled: 1
+  m_GameObject: {fileID: 3797029318293763050}
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cdd99aa02c3df954c989e711290e0966, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_ID: 5
-  m_itemName: Paint Bucket
---- !u!1 &792317666818641961
+  m_ID: 3
+  m_itemName: Nail
+--- !u!1 &4360118936602421746
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -85,9 +85,9 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 3646937948941173712}
-  - component: {fileID: 1262320727455195953}
-  - component: {fileID: 1242757164493654255}
+  - component: {fileID: 351323738758593035}
+  - component: {fileID: 2880064783351913194}
+  - component: {fileID: 2829255232078131508}
   m_Layer: 0
   m_Name: mergedBlocks
   m_TagString: Untagged
@@ -95,35 +95,35 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &3646937948941173712
+--- !u!4 &351323738758593035
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 792317666818641961}
+  m_GameObject: {fileID: 4360118936602421746}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 3789280453419841570}
+  m_Father: {fileID: 210151670837035513}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &1262320727455195953
+--- !u!33 &2880064783351913194
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 792317666818641961}
-  m_Mesh: {fileID: -3145058497754134291, guid: 77ba0bcea82ba2645a7f5794d5190576, type: 3}
---- !u!23 &1242757164493654255
+  m_GameObject: {fileID: 4360118936602421746}
+  m_Mesh: {fileID: -3145058497754134291, guid: a14622a901dcf7a4fbdb23240cc52549, type: 3}
+--- !u!23 &2829255232078131508
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 792317666818641961}
+  m_GameObject: {fileID: 4360118936602421746}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -134,10 +134,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 1109738400867319139, guid: 77ba0bcea82ba2645a7f5794d5190576, type: 3}
-  - {fileID: -3963241562183589234, guid: 77ba0bcea82ba2645a7f5794d5190576, type: 3}
-  - {fileID: 4499914417870553158, guid: 77ba0bcea82ba2645a7f5794d5190576, type: 3}
-  - {fileID: -407617382302988920, guid: 77ba0bcea82ba2645a7f5794d5190576, type: 3}
+  - {fileID: 8747923039192185998, guid: a14622a901dcf7a4fbdb23240cc52549, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

@@ -1,0 +1,17 @@
+# Created by Kenney (www.kenney.nl)
+
+newmtl Wood_Darker
+Kd 0.384 0.314 0.251
+
+newmtl Oak_Leaves
+Kd 0.322 0.541 0.157
+
+newmtl Coconut
+Kd 0.518 0.42 0.333
+
+newmtl Wood_Palm
+Kd 0.545 0.435 0.278
+
+newmtl Stucco
+Kd 0.628 0.529 0.359
+

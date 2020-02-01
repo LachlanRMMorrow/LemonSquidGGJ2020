@@ -1,0 +1,9 @@
+# Created by Kenney (www.kenney.nl)
+
+newmtl custom36
+Kd 0.5368338 0.9448276 0.7844437
+map_Kd Textures/custom36.png
+
+newmtl custom35
+Kd 0.5251268 0.6413793 0.355674
+

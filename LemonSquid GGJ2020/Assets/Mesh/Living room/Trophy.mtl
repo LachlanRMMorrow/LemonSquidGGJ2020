@@ -1,0 +1,8 @@
+# Created by Kenney (www.kenney.nl)
+
+newmtl Straw
+Kd 0.9448276 0.7391176 0.1975548
+
+newmtl dark
+Kd 0.2235294 0.2352941 0.2745098
+

@@ -1,0 +1,11 @@
+# Created by Kenney (www.kenney.nl)
+
+newmtl Wood_Darker
+Kd 0.384 0.314 0.251
+
+newmtl Grass
+Kd 0.133 0.545 0.133
+
+newmtl Stucco
+Kd 0.628 0.529 0.359
+
