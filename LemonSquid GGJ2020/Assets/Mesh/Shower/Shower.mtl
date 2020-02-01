@@ -1,0 +1,14 @@
+# Created by Kenney (www.kenney.nl)
+
+newmtl custom50
+Kd 0.11 0.11 0.11
+
+newmtl glass
+Kd 1 1 1
+
+newmtl Dark_Grey
+Kd 0.377 0.377 0.377
+
+newmtl _defaultMat
+Kd 1 1 1
+

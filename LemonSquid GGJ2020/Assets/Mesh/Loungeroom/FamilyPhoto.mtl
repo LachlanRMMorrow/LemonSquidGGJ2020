@@ -1,0 +1,12 @@
+# Created by Kenney (www.kenney.nl)
+
+newmtl _defaultMat
+Kd 0.939 0.953 1
+
+newmtl wood
+Kd 1 1 1
+map_Kd Textures/wood.png
+
+newmtl woodDark
+Kd 0.62 0.329 0.235
+

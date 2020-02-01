@@ -1,0 +1,8 @@
+# Created by Kenney (www.kenney.nl)
+
+newmtl Dark_Red_Roof
+Kd 0.424 0.18 0.118
+
+newmtl wood
+Kd 0.749 0.443 0.345
+
