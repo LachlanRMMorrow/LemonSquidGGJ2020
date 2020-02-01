@@ -63,10 +63,6 @@ public class InteractableManager : SingletonBase<InteractableManager>
     public BreakableInteractable brokenObject { get { return m_brokenObject; } }
     public bool hasBrokenObject { get { return m_brokenObject != null; } }
 
-
-    public
-
-
     // Start is called before the first frame update
     void Start()
     {
@@ -81,7 +77,7 @@ public class InteractableManager : SingletonBase<InteractableManager>
 
     public void SpawnRepairObjects()
     {
-        seed = playerName.GetHashCode();
+        seed = PlayerPrefs.GetString(playerName).GetHashCode();
         Random.seed = seed;
 
         spawnCount = Mathf.Clamp(spawnCount, 0, spawnPoints.Count);
