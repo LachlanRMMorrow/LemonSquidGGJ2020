@@ -26,7 +26,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 561807668530485986}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_LocalPosition: {x: -0.532, y: 0, z: 0.991}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4153211521118237417}
@@ -90,6 +90,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4153211521118237417}
+  - component: {fileID: 6281655251543787418}
+  - component: {fileID: 1704354735712436534}
   m_Layer: 0
   m_Name: Bike1
   m_TagString: Untagged
@@ -104,7 +106,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1150795080774779130}
-  m_LocalRotation: {x: 0.15102558, y: -0.69078934, z: -0.15102515, w: 0.6907915}
+  m_LocalRotation: {x: 0.15102705, y: -0.69079, z: -0.15102705, w: 0.69079}
   m_LocalPosition: {x: -1.9721661, y: -0.4192562, z: 8.598873}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -112,3 +114,33 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: -90.00001, z: -24.665}
+--- !u!65 &6281655251543787418
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1150795080774779130}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.44, y: 1.49, z: 1.4}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1704354735712436534
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1150795080774779130}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a2ff53180bb39847b8b01f953a1dc9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  neededItems:
+  - item: {fileID: 5716636106238745835, guid: 0eeb51ed9feb7aa4ebcf40afb896963e, type: 3}
+    amountRequired: 1
+    amount: 0
+    complete: 0

@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &2507350264835365905
+--- !u!1 &412226572351654334
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,9 +8,9 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1921211638271463400}
-  - component: {fileID: 4157296840193601289}
-  - component: {fileID: 4110146533141562583}
+  - component: {fileID: 4457125351650581063}
+  - component: {fileID: 2216561947855747750}
+  - component: {fileID: 2195870221270897016}
   m_Layer: 0
   m_Name: mergedBlocks
   m_TagString: Untagged
@@ -18,35 +18,35 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1921211638271463400
+--- !u!4 &4457125351650581063
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2507350264835365905}
+  m_GameObject: {fileID: 412226572351654334}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_LocalPosition: {x: -10.069, y: -2, z: -4.588}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 2063562386402980890}
+  m_Father: {fileID: 4310049453905617333}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &4157296840193601289
+--- !u!33 &2216561947855747750
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2507350264835365905}
-  m_Mesh: {fileID: -3145058497754134291, guid: ce295f8e588d8124db766cc9e6243053, type: 3}
---- !u!23 &4110146533141562583
+  m_GameObject: {fileID: 412226572351654334}
+  m_Mesh: {fileID: -3145058497754134291, guid: 643e78f380e17f64ebfa197e325a6cce, type: 3}
+--- !u!23 &2195870221270897016
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2507350264835365905}
+  m_GameObject: {fileID: 412226572351654334}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -57,8 +57,8 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -2600903966100615995, guid: ce295f8e588d8124db766cc9e6243053, type: 3}
-  - {fileID: -8067726398312463513, guid: ce295f8e588d8124db766cc9e6243053, type: 3}
+  - {fileID: -4231637370832951941, guid: 643e78f380e17f64ebfa197e325a6cce, type: 3}
+  - {fileID: -4573811946746482846, guid: 643e78f380e17f64ebfa197e325a6cce, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -79,7 +79,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!1 &3096337814384461321
+--- !u!1 &975881425402188710
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -87,26 +87,59 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 2063562386402980890}
+  - component: {fileID: 4310049453905617333}
+  - component: {fileID: 9189734101598621558}
+  - component: {fileID: -8431339195955560655}
   m_Layer: 0
-  m_Name: CoffeeTable
+  m_Name: Clothes-Hamper
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &2063562386402980890
+--- !u!4 &4310049453905617333
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3096337814384461321}
-  m_LocalRotation: {x: -0, y: 0.70710677, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -20.62733, y: -0.7612562, z: -6.721128}
+  m_GameObject: {fileID: 975881425402188710}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 5.14, y: -2, z: -13.77}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1921211638271463400}
+  - {fileID: 4457125351650581063}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 90.00001, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!136 &9189734101598621558
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 975881425402188710}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.34
+  m_Height: 2.37
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &-8431339195955560655
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 975881425402188710}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a2ff53180bb39847b8b01f953a1dc9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  neededItems:
+  - item: {fileID: 8977613958984536544, guid: c9e6c2386f8fbd24ba7615fd45f9d268, type: 3}
+    amountRequired: 1
+    amount: 0
+    complete: 0
