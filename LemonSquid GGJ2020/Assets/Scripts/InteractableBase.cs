@@ -2,20 +2,25 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class InteractableBase : MonoBehaviour
 {
+    protected virtual void Setup()
+    {
+        // TEMP - Used to correct for weird scale on placeholder objects
+        transform.position += Vector3.up * transform.localScale.y / 2;
+    }
+
 
     // Start is called before the first frame update
     void Start()
     {
-        // TEMP - Used to correct for weird scale on placeholder objects
-        transform.position += Vector3.up * transform.localScale.y/2;    
+        Setup();
     }
 
     // Update is called once per frame
     void Update()
-    {
-        
+    {       
 
 
         // Debug
@@ -33,12 +38,6 @@ public class InteractableBase : MonoBehaviour
 
     public virtual void Interact()
     {
-        if (!InteractableManager.Instance.hasBrokenObject)
-        {
-            UIManager.Instance.DisplayCurrentObjective(true);
-            InteractableManager.Instance.SetBrokenObject(this); 
-            return;
-        }
 
     }
 

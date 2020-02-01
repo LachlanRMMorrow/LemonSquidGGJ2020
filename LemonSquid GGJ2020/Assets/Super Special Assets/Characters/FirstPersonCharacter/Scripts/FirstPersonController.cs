@@ -51,6 +51,15 @@ namespace UnityStandardAssets.Characters.FirstPerson
         private bool m_Jumping;
         private AudioSource m_AudioSource;
 
+
+
+
+        [SerializeField] private Transform handPosition;
+        [SerializeField] private RepairInteractable heldItem;
+
+
+
+
         // Use this for initialization
         private void Start()
         {
@@ -72,9 +81,57 @@ namespace UnityStandardAssets.Characters.FirstPerson
         {
             WhatAmILookingAtRaycast();
             RotateView();
-            if (Input.GetMouseButtonDown(0) && lookingAt != null) 
+            if (Input.GetMouseButtonDown(0))
             {
-                lookingAt.Interact();
+                if (heldItem != null)
+                {
+                    if (lookingAt != null)
+                    {
+                        if (lookingAt as BreakableInteractable != null)
+                        {
+                            if (lookingAt == InteractableManager.Instance.brokenObject)
+                            {
+                                if (InteractableManager.Instance.CollectItem(heldItem))
+                                {
+                                    Destroy(heldItem.gameObject);
+                                    heldItem = null;
+                                }
+                                else
+                                {
+                                    heldItem.Drop();
+                                    heldItem = null;
+                                }
+
+                            }
+                        }
+                        else
+                        {
+                            heldItem.Drop();
+                            heldItem = null;
+                        }
+                    }
+                    else
+                    {
+                        heldItem.Drop();
+                        heldItem = null;
+                    }
+                }
+                else if (lookingAt != null)
+                {
+                    if (lookingAt as RepairInteractable != null)
+                    {
+                        if (heldItem == null)
+                        {
+                            heldItem = lookingAt as RepairInteractable;
+                            heldItem.Grab();
+                            heldItem.transform.SetParent(handPosition);
+                            heldItem.transform.localPosition = Vector3.zero;
+                            heldItem.transform.localRotation = Quaternion.Euler(Vector3.zero);
+                        }
+                    }
+
+                    lookingAt.Interact();
+                }
             }
             // the jump state needs to read here to make sure it is not missed
             if (!m_Jump)
