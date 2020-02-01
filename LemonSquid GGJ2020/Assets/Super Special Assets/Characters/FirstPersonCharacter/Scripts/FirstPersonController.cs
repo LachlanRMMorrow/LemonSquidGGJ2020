@@ -35,7 +35,6 @@ namespace UnityStandardAssets.Characters.FirstPerson
         [SerializeField] InteractableBase lookingAt;
 
         [SerializeField] bool lookingAtInteractable;
-        [SerializeField] Canvas UICanvas;
 
 
         private Camera m_Camera;
@@ -277,12 +276,28 @@ namespace UnityStandardAssets.Characters.FirstPerson
 
             if (Physics.Raycast(ray, out lookingAtHit, interactDistance))
             {
-                lookingAt = lookingAtHit.transform.GetComponent<InteractableBase>();
+
+                InteractableBase interactable = lookingAtHit.transform.GetComponent<InteractableBase>();
+                if (interactable != null) 
+                {
+                    if (interactable.CanInteract())
+                    {
+                        lookingAtInteractable = true;
+                        lookingAt = interactable;
+                    }
+                    else
+                    {
+                        lookingAt = null;
+                        lookingAtInteractable = false;
+                    }
+                }
             }
             else
             {
                 lookingAt = null;
+                lookingAtInteractable = false;
             }
+            UIManager.Instance.ToggleCrosshair(lookingAtInteractable);
         }
     }
 }
