@@ -309,8 +309,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_delay: 3
-  useDelay: 0
-  m_loadScene: NameEntry
+  useDelay: 1
+  m_loadScene: Palmer Test Scene
 --- !u!114 &732088063
 MonoBehaviour:
   m_ObjectHideFlags: 0

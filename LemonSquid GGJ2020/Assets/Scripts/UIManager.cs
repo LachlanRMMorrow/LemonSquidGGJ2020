@@ -6,23 +6,28 @@ using UnityEngine.UI;
 public class UIManager : SingletonBase<UIManager>
 {
     [SerializeField] bool timer1Over;
+    [SerializeField] bool timer2Over;
+    [SerializeField] bool timer3Over;
     [SerializeField] bool timerStarted;
 
     [SerializeField] float countdownTimer = 1f;
+    [SerializeField] float countdownTimerOriginal = 1f;
     [SerializeField] Image currentCrosshair;
     [SerializeField] Sprite lookingAtInteractableCrosshair;
     [SerializeField] Sprite defaultCrosshair;
     [SerializeField] GameObject currentObjectiveText;
     [SerializeField] GameObject surviveText;
+    [SerializeField] TMPro.TextMeshProUGUI TextSubCategory;
 
     public Animator transitionAnimation;
 
     // Start is called before the first frame update
     void Start()
     {
-        transitionAnimation.SetTrigger("Start");
-
+        countdownTimerOriginal = countdownTimer;
         timer1Over = false;
+        timer2Over = false;
+        timer3Over = false;
         timerStarted = false;
         currentCrosshair = GameObject.Find("Crosshair").GetComponent<Image>();
         currentObjectiveText = GameObject.Find("Text Current Objective");
@@ -43,7 +48,15 @@ public class UIManager : SingletonBase<UIManager>
     {
         if (timerStarted == true && timer1Over != true)
         {
-            Timer();
+            Timer(1);
+        }
+        if (timerStarted == true && timer2Over != true && timer1Over == true)
+        {
+            Timer(2);
+        }
+        if (timerStarted == true && timer3Over != true && timer2Over == true)
+        {
+            Timer(3);
         }
     }
 
@@ -71,13 +84,27 @@ public class UIManager : SingletonBase<UIManager>
             surviveText.SetActive(onOrOff);
         }
     }
-    private void Timer()
+    private void Timer(int timerToRun)
     {
         countdownTimer -= Time.deltaTime;
-        if (countdownTimer <= 0)
+        if (countdownTimer <= 0 && timerToRun == 1)
         {
             surviveText.SetActive(true);
             timer1Over = true;
+            //timerStarted = false;
+            countdownTimer = countdownTimerOriginal;
+        }
+        if (countdownTimer <= 0 && timerToRun == 2)
+        {
+            transitionAnimation.SetTrigger("Start");
+            timer2Over= true;
+            //timerStarted = false;
+            countdownTimer = countdownTimerOriginal+0.5f;
+        }
+        if (countdownTimer <= 0 && timerToRun == 3)
+        {
+            TextSubCategory.enabled = true;
+            timer3Over = true;
             timerStarted = false;
         }
     }
