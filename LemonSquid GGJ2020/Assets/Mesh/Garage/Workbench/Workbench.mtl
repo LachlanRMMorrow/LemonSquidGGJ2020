@@ -1,0 +1,8 @@
+# Created by Kenney (www.kenney.nl)
+
+newmtl Iron_Grey_-_Light
+Kd 0.62 0.604 0.58
+
+newmtl Iron_Grey_-_Dark
+Kd 0.416 0.4 0.384
+
