@@ -229,23 +229,29 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_approachinghomeonwner: {fileID: 0}
   m_ceramicbreaking: {fileID: 0}
-  m_glassbreaking: {fileID: 0}
+  m_glassbreaking: {fileID: 8300000, guid: 9691261ee0a652345a82b288f38c7632, type: 3}
   m_woodsplintering: {fileID: 0}
   m_carapproaching: {fileID: 0}
-  m_dooropening: []
+  m_dooropening:
+  - {fileID: 8300000, guid: 350f7bb3b492a404b8d7f6b6a1f155b6, type: 3}
+  - {fileID: 8300000, guid: d5223ccd902d0764a90f8955e84c5f7f, type: 3}
   m_doorclosing:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 8300000, guid: 39df2c5bdaa53cf42b87a296e3d09c63, type: 3}
+  - {fileID: 8300000, guid: cac5d17f4334f294384b43a1bbab31d1, type: 3}
+  - {fileID: 8300000, guid: fe91f1ea5bff78946aa5f9aab7249db1, type: 3}
+  - {fileID: 8300000, guid: 56a81ca3ba328c04ab86547faa5fd38f, type: 3}
   m_electricalsparking: {fileID: 0}
-  m_ducttapebeingapplied: {fileID: 0}
+  m_ducttapebeingapplied: {fileID: 8300000, guid: 2ab91da3da706b742bd6abe9c73efc57,
+    type: 3}
   m_dundunaudio: {fileID: 0}
   m_breadbreaking: {fileID: 0}
   m_gasp: {fileID: 0}
-  m_BGM: {fileID: 0}
-  m_recordScreech: {fileID: 0}
+  m_BGM1: {fileID: 8300000, guid: 90007ab8f83a62a43a5c761d72c2b1a0, type: 3}
+  m_BGM2: {fileID: 8300000, guid: 4b1c516a02677dd4cbdc167f7f344e0d, type: 3}
+  m_winkazoo: {fileID: 8300000, guid: 2066c95e037746543b4daf29aed47f41, type: 3}
+  m_recordScreech: {fileID: 8300000, guid: a154a9676f764a04a90056abf66763b5, type: 3}
   m_source: {fileID: 0}
+  m_BGMsource: {fileID: 0}
 --- !u!114 &1078167015
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -405,16 +411,6 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -185
       objectReference: {fileID: 0}
-    - target: {fileID: 4085642354628505670, guid: 311eba40a5f5b7247980ee2ecc163857,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 750
-      objectReference: {fileID: 0}
-    - target: {fileID: 4085642354628505670, guid: 311eba40a5f5b7247980ee2ecc163857,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -60
-      objectReference: {fileID: 0}
     - target: {fileID: 428384486563430901, guid: 311eba40a5f5b7247980ee2ecc163857,
         type: 3}
       propertyPath: m_Name
@@ -424,6 +420,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Text Current Objective
+      objectReference: {fileID: 0}
+    - target: {fileID: 4085642354628505670, guid: 311eba40a5f5b7247980ee2ecc163857,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 750
+      objectReference: {fileID: 0}
+    - target: {fileID: 4085642354628505670, guid: 311eba40a5f5b7247980ee2ecc163857,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -60
       objectReference: {fileID: 0}
     - target: {fileID: 6678737116337983958, guid: 311eba40a5f5b7247980ee2ecc163857,
         type: 3}

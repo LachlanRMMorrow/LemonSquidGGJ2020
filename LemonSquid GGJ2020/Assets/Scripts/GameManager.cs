@@ -46,6 +46,13 @@ public class GameManager : SingletonBase<GameManager>
 
     public void Complete(bool success)
     {
-
+        if (success == false) 
+        {
+            timerOver = true;
+        }
+        else 
+        {
+            AudioManager.Instance.PlayKazooForRealzies();
+        }
     }
 }
