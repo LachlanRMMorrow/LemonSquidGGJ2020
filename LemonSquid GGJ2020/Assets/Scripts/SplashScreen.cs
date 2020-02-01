@@ -34,7 +34,7 @@ public class SplashScreen : MonoBehaviour
         if (playerName.text.Length >= 1) 
         {
             PlayerPrefs.SetString("PlayerName", playerName.text);
-            Debug.Log("yeetus");
+            Debug.Log("yeetus completus");
         }
     }
 }
