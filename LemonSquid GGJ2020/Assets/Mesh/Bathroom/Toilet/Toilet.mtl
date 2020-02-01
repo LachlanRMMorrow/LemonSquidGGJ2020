@@ -1,0 +1,8 @@
+# Created by Kenney (www.kenney.nl)
+
+newmtl custom11
+Kd 1 1 1
+
+newmtl Silver
+Kd 0.248 0.248 0.248
+

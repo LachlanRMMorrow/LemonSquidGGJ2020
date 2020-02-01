@@ -1,0 +1,8 @@
+# Created by Kenney (www.kenney.nl)
+
+newmtl stoneDark
+Kd 0.338 0.271 0.206
+
+newmtl Sandstone_5
+Kd 0.331 0.25 0.161
+

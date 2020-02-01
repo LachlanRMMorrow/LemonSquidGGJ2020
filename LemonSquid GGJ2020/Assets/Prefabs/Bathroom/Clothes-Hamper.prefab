@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &5159421451651455970
+--- !u!1 &412226572351654334
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,9 +8,9 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 9222127935879448603}
-  - component: {fileID: 6693396616031676666}
-  - component: {fileID: 6654134212578083620}
+  - component: {fileID: 4457125351650581063}
+  - component: {fileID: 2216561947855747750}
+  - component: {fileID: 2195870221270897016}
   m_Layer: 0
   m_Name: mergedBlocks
   m_TagString: Untagged
@@ -18,35 +18,35 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &9222127935879448603
+--- !u!4 &4457125351650581063
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5159421451651455970}
+  m_GameObject: {fileID: 412226572351654334}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 8786849152465204201}
+  m_Father: {fileID: 4310049453905617333}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &6693396616031676666
+--- !u!33 &2216561947855747750
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5159421451651455970}
-  m_Mesh: {fileID: -3145058497754134291, guid: 0b52c0f309a31c141805cbf783cdd0f3, type: 3}
---- !u!23 &6654134212578083620
+  m_GameObject: {fileID: 412226572351654334}
+  m_Mesh: {fileID: -3145058497754134291, guid: 643e78f380e17f64ebfa197e325a6cce, type: 3}
+--- !u!23 &2195870221270897016
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5159421451651455970}
+  m_GameObject: {fileID: 412226572351654334}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -57,11 +57,8 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -3963241562183589234, guid: 0b52c0f309a31c141805cbf783cdd0f3, type: 3}
-  - {fileID: 4499914417870553158, guid: 0b52c0f309a31c141805cbf783cdd0f3, type: 3}
-  - {fileID: 2892258727692252438, guid: 0b52c0f309a31c141805cbf783cdd0f3, type: 3}
-  - {fileID: 8989517219868824950, guid: 0b52c0f309a31c141805cbf783cdd0f3, type: 3}
-  - {fileID: 4570950033925307937, guid: 0b52c0f309a31c141805cbf783cdd0f3, type: 3}
+  - {fileID: -4231637370832951941, guid: 643e78f380e17f64ebfa197e325a6cce, type: 3}
+  - {fileID: -4573811946746482846, guid: 643e78f380e17f64ebfa197e325a6cce, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -82,7 +79,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!1 &5740525363108741626
+--- !u!1 &975881425402188710
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -90,26 +87,26 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 8786849152465204201}
+  - component: {fileID: 4310049453905617333}
   m_Layer: 0
-  m_Name: Tooth-Brush-Cup
+  m_Name: Clothes-Hamper
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &8786849152465204201
+--- !u!4 &4310049453905617333
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5740525363108741626}
+  m_GameObject: {fileID: 975881425402188710}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 17, y: -2.051, z: -0.27}
+  m_LocalPosition: {x: 5.14, y: -2, z: -13.77}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 9222127935879448603}
+  - {fileID: 4457125351650581063}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

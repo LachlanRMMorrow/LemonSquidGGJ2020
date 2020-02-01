@@ -1,0 +1,24 @@
+# Created by Kenney (www.kenney.nl)
+
+newmtl Silver
+Kd 0.248 0.248 0.248
+
+newmtl custom10
+Kd 0.917 0.917 0.917
+map_Kd Textures/custom10.png
+
+newmtl custom9
+Kd 0.028 0.028 0.028
+map_Kd Textures/custom9.png
+
+newmtl Counters
+Kd 0.048 0.048 0.048
+map_Kd Textures/Counters.png
+
+newmtl custom8
+Kd 1 1 1
+map_Kd Textures/custom8.png
+
+newmtl White
+Kd 1 1 1
+

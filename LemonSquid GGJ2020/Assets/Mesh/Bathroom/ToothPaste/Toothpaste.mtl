@@ -1,0 +1,11 @@
+# Created by Kenney (www.kenney.nl)
+
+newmtl metalLight
+Kd 0.236 0.297 0.786
+
+newmtl custom35
+Kd 0.986 0.986 0.986
+
+newmtl lightRed
+Kd 0.996 0.259 0.259
+
