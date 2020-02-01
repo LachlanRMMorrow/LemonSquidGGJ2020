@@ -4,6 +4,11 @@ using UnityEngine;
 
 public class AtticDoor : InteractableBase
 {
+
+
+    [SerializeField] AudioClip openClip;
+    [SerializeField] AudioClip closeClip;
+
     bool open = true;
     Quaternion originalRotation;
     Quaternion openRotation;
@@ -14,6 +19,7 @@ public class AtticDoor : InteractableBase
         open = false;
         originalRotation = transform.rotation;
         openRotation = Quaternion.Euler(originalRotation.eulerAngles + new Vector3(0, 90, 0));
+    
     }
 
 
@@ -21,6 +27,8 @@ public class AtticDoor : InteractableBase
     public override void Interact()
     {
         open = !open;
+
+        source.PlayOneShot(open ? openClip : closeClip);
     }
 
     private void Update()

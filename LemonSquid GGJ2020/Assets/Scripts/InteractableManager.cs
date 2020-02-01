@@ -15,6 +15,7 @@ public class InteractableManager : SingletonBase<InteractableManager>
 
 
         public RepairInteractable item;
+
         public int amountRequired;
         // [HideInInspector] 
         public int amount;
@@ -56,6 +57,7 @@ public class InteractableManager : SingletonBase<InteractableManager>
     [SerializeField] public RepairRequired[] repairRequired;
     [SerializeField] private List<Transform> spawnPoints = new List<Transform>();
 
+    public GameObject rubblePrefab;
     [SerializeField] private int spawnCount;
 
 
@@ -66,7 +68,7 @@ public class InteractableManager : SingletonBase<InteractableManager>
     // Start is called before the first frame update
     void Start()
     {
-        SpawnRepairObjects();
+        // SpawnRepairObjects();
     }
 
     // Update is called once per frame
@@ -79,6 +81,22 @@ public class InteractableManager : SingletonBase<InteractableManager>
     {
         seed = PlayerPrefs.GetString(playerName).GetHashCode();
         Random.seed = seed;
+
+
+        for (int i = 0; i < InteractableManager.Instance.repairRequired.Length; ++i)
+        {
+            for (int j = 0; j < InteractableManager.Instance.repairRequired[i].amountRequired; ++j)
+            {
+                Transform locationInfo = GetSpawnPoint();
+
+                if (locationInfo != null)
+                {
+                    Instantiate(InteractableManager.Instance.repairRequired[i].item, locationInfo.position, locationInfo.rotation);
+                }
+            }
+        }
+
+
 
         spawnCount = Mathf.Clamp(spawnCount, 0, spawnPoints.Count);
 
@@ -120,6 +138,13 @@ public class InteractableManager : SingletonBase<InteractableManager>
             m_brokenObject.Break();
 
             repairRequired = m_brokenObject.neededItems;
+
+            rubblePrefab = Instantiate(rubblePrefab, interactable.transform.position, interactable.transform.rotation);
+
+
+            m_brokenObject.GetComponentInChildren<MeshRenderer>().enabled = false;
+
+            SpawnRepairObjects();
             OnItemsUpdate?.Invoke();
         }
     }
@@ -143,11 +168,35 @@ public class InteractableManager : SingletonBase<InteractableManager>
                     {
                         repairRequired[i].FoundItem();
                         OnItemsUpdate?.Invoke();
+
+                        if (CheckRepair())
+                        {
+                            GameManager.Instance.Complete(true);
+                        }
                         return true;
                     }
                 }
             }
         }
+        return false;
+    }
+
+    public bool CheckRepair()
+    {
+        bool done = true;
+        for (int i = 0; i < repairRequired.Length; ++i)
+        {
+            if (!repairRequired[i].complete)
+                done = false;
+        }
+
+        if (done)
+        {
+            rubblePrefab.SetActive(false);
+            m_brokenObject.GetComponentInChildren<MeshRenderer>().enabled = true;
+            return true;
+        }
+
         return false;
     }
 

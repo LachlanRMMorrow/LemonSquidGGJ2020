@@ -32,11 +32,20 @@ public class GameManager : SingletonBase<GameManager>
         {
             Debug.Log("HOMIE IS HOME");
             timerOver = true;
+            Complete(false);
         }
     }
 
     public void StartTimer() 
     {
         timerStarted = true;
+        AudioManager.Instance.PlayerScreech();
+    }
+
+
+
+    public void Complete(bool success)
+    {
+
     }
 }

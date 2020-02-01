@@ -9,6 +9,12 @@ EditorBuildSettings:
     path: Assets/Scenes/Spashscreen.unity
     guid: ef763959c0c9b15408e78c8a58f3e642
   - enabled: 1
+    path: Assets/Scenes/NameEntry.unity
+    guid: c382e161a7849604fbe75427f99021ce
+  - enabled: 1
+    path: Assets/Scenes/Main.unity
+    guid: 60422cc7112550247a8d0b09d9687dc3
+  - enabled: 1
     path: Assets/Scenes/Palmer Test Scene.unity
     guid: 2b3d6c6b31455c849a2581b4bf868b00
   m_configObjects: {}

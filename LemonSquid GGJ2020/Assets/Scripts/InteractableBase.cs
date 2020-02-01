@@ -5,8 +5,11 @@ using UnityEngine;
 
 public class InteractableBase : MonoBehaviour
 {
+
+    [SerializeField] protected AudioSource source;
     protected virtual void Setup()
     {
+        source = GetComponent<AudioSource>();
     }
 
 
@@ -14,18 +17,6 @@ public class InteractableBase : MonoBehaviour
     void Start()
     {
         Setup();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {       
-
-
-        // Debug
-        if (Input.GetKeyDown(KeyCode.T))
-        {
-            Interact();
-        }
     }
 
 
@@ -36,7 +27,10 @@ public class InteractableBase : MonoBehaviour
 
     public virtual void Interact()
     {
-
+        if (source != null)
+        {
+            source.PlayOneShot(source.clip);
+        }
     }
 
 

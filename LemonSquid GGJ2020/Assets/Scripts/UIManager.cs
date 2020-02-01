@@ -61,4 +61,6 @@ public class UIManager : SingletonBase<UIManager>
     {
         transitionAnimation.SetTrigger("Start");
     }
+
+
 }

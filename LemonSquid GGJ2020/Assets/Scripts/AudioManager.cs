@@ -18,15 +18,33 @@ public class AudioManager : SingletonBase<AudioManager>
     [SerializeField] private AudioClip m_gasp;
     [SerializeField] private AudioClip m_BGM;
 
+
+    [SerializeField] private AudioClip m_recordScreech;
+
+
+
+    [SerializeField] private AudioSource m_source;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        m_source = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
     void Update()
     {
         
+    }
+
+    public void PlayerScreech()
+    {
+        StartCoroutine(DelayPlay());
+    }
+
+    IEnumerator DelayPlay()
+    {
+        yield return new WaitForSeconds(1);
+        m_source.PlayOneShot(m_recordScreech);
     }
 }

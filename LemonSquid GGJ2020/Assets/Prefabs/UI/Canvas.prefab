@@ -202,14 +202,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timer1Over: 0
+  timer2Over: 0
+  timer3Over: 0
   timerStarted: 0
   countdownTimer: 1
+  countdownTimerOriginal: 1
   currentCrosshair: {fileID: 968948008718962031}
   lookingAtInteractableCrosshair: {fileID: 21300000, guid: 2a1a1b67d1277dc4483376c786e03635,
     type: 3}
   defaultCrosshair: {fileID: 21300000, guid: 7e95fa87ef8685d4d9e1715efdb5e2a7, type: 3}
   currentObjectiveText: {fileID: 4601944848251713293}
   surviveText: {fileID: 613484055283309719}
+  TextSubCategory: {fileID: 0}
   transitionAnimation: {fileID: 955444644}
 --- !u!114 &1874412585
 MonoBehaviour:
@@ -240,6 +244,8 @@ MonoBehaviour:
   m_breadbreaking: {fileID: 0}
   m_gasp: {fileID: 0}
   m_BGM: {fileID: 0}
+  m_recordScreech: {fileID: 0}
+  m_source: {fileID: 0}
 --- !u!114 &1078167015
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -342,7 +348,7 @@ PrefabInstance:
     - target: {fileID: 4902204291467057797, guid: 311eba40a5f5b7247980ee2ecc163857,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 750
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4902204291467057797, guid: 311eba40a5f5b7247980ee2ecc163857,
         type: 3}
@@ -392,17 +398,22 @@ PrefabInstance:
     - target: {fileID: 428384486563430900, guid: 311eba40a5f5b7247980ee2ecc163857,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -60.099976
+      value: -245.09998
       objectReference: {fileID: 0}
     - target: {fileID: 6634153032057526333, guid: 311eba40a5f5b7247980ee2ecc163857,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -185
+      objectReference: {fileID: 0}
+    - target: {fileID: 4085642354628505670, guid: 311eba40a5f5b7247980ee2ecc163857,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 750
       objectReference: {fileID: 0}
     - target: {fileID: 4085642354628505670, guid: 311eba40a5f5b7247980ee2ecc163857,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -116.94995
+      value: -60
       objectReference: {fileID: 0}
     - target: {fileID: 428384486563430901, guid: 311eba40a5f5b7247980ee2ecc163857,
         type: 3}
@@ -417,7 +428,7 @@ PrefabInstance:
     - target: {fileID: 6678737116337983958, guid: 311eba40a5f5b7247980ee2ecc163857,
         type: 3}
       propertyPath: m_text
-      value: 
+      value: asd
       objectReference: {fileID: 0}
     - target: {fileID: 6678737116337983958, guid: 311eba40a5f5b7247980ee2ecc163857,
         type: 3}
@@ -437,7 +448,7 @@ PrefabInstance:
     - target: {fileID: 6678737116337983958, guid: 311eba40a5f5b7247980ee2ecc163857,
         type: 3}
       propertyPath: m_textInfo.characterCount
-      value: 0
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6678737116337983958, guid: 311eba40a5f5b7247980ee2ecc163857,
         type: 3}
@@ -447,17 +458,7 @@ PrefabInstance:
     - target: {fileID: 6678737116337983958, guid: 311eba40a5f5b7247980ee2ecc163857,
         type: 3}
       propertyPath: m_textInfo.wordCount
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6678737116337983958, guid: 311eba40a5f5b7247980ee2ecc163857,
-        type: 3}
-      propertyPath: m_textInfo.lineCount
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6678737116337983958, guid: 311eba40a5f5b7247980ee2ecc163857,
-        type: 3}
-      propertyPath: m_textInfo.pageCount
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 311eba40a5f5b7247980ee2ecc163857, type: 3}

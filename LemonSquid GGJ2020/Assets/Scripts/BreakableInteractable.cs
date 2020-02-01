@@ -7,7 +7,7 @@ public class BreakableInteractable : InteractableBase
 
     public InteractableManager.RepairRequired[] neededItems;
 
-    
+
 
 
     public override bool CanInteract()
@@ -28,6 +28,7 @@ public class BreakableInteractable : InteractableBase
     {
         if (!InteractableManager.Instance.hasBrokenObject)
         {
+            base.Interact();
             UIManager.Instance.DisplayCurrentObjective(true);
             InteractableManager.Instance.SetBrokenObject(this);
             return;
