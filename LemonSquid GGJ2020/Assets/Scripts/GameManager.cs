@@ -12,6 +12,7 @@ public class GameManager : SingletonBase<GameManager>
     void Start()
     {
         timerOver = false;
+        timerStarted = false;
     }
 
     // Update is called once per frame
