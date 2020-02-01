@@ -18,11 +18,10 @@ public class GameManager : SingletonBase<GameManager>
     // Update is called once per frame
     void Update()
     {
-        if (timerOver != true && timerStarted == true) 
+        if (timerOver == false && timerStarted == true) 
         {
             Timer();
         }
-        
 
     }
 

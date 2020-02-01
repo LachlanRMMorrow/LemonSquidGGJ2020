@@ -69,6 +69,7 @@ public class InteractableManager : SingletonBase<InteractableManager>
         if (brokenObject == null)
         {
             GameManager.Instance.StartTimer();
+            UIManager.Instance.DisplayCurrentObjective(true);
             brokenObject = interactable;
         }
     }

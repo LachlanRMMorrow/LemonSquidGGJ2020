@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class UIManager : SingletonBase<UIManager>
 {
-    [SerializeField] bool timerOver;
+    [SerializeField] bool timer1Over;
     [SerializeField] bool timerStarted;
 
     [SerializeField] float countdownTimer = 1f;
@@ -15,14 +15,18 @@ public class UIManager : SingletonBase<UIManager>
     [SerializeField] GameObject currentObjectiveText;
     [SerializeField] GameObject surviveText;
 
+    public Animator transitionAnimation;
+
     // Start is called before the first frame update
     void Start()
     {
-        timerOver = false;
+        transitionAnimation.SetTrigger("Start");
+
+        timer1Over = false;
         timerStarted = false;
         currentCrosshair = GameObject.Find("Crosshair").GetComponent<Image>();
-        //currentObjectiveText = GameObject.Find("Text Current Objective");
-        //surviveText = GameObject.Find("Text Survive");
+        currentObjectiveText = GameObject.Find("Text Current Objective");
+        surviveText = GameObject.Find("Text Survive");
         if (surviveText.activeInHierarchy == true) 
         {
             surviveText.SetActive(false);
@@ -37,7 +41,7 @@ public class UIManager : SingletonBase<UIManager>
     // Update is called once per frame
     void Update()
     {
-        if (timerStarted == true && timerOver != true)
+        if (timerStarted == true && timer1Over != true)
         {
             Timer();
         }
@@ -73,7 +77,7 @@ public class UIManager : SingletonBase<UIManager>
         if (countdownTimer <= 0)
         {
             surviveText.SetActive(true);
-            timerOver = true;
+            timer1Over = true;
             timerStarted = false;
         }
     }
