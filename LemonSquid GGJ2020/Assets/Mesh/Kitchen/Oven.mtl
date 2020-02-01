@@ -1,0 +1,12 @@
+# Created by Kenney (www.kenney.nl)
+
+newmtl custom9
+Kd 0.028 0.028 0.028
+map_Kd Textures/custom9.png
+
+newmtl Kitchen_Appliance_Trim
+Kd 0.439 0.439 0.439
+
+newmtl custom50
+Kd 0.11 0.11 0.11
+

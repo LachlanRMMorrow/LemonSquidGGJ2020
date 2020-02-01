@@ -1,0 +1,8 @@
+# Created by Kenney (www.kenney.nl)
+
+newmtl _defaultMat
+Kd 1 0.928 0.809
+
+newmtl Window
+Kd 0.659 0.706 0.777
+

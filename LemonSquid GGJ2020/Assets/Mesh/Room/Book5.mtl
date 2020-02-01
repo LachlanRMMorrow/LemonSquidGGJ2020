@@ -1,0 +1,8 @@
+# Created by Kenney (www.kenney.nl)
+
+newmtl initialShadingGroup
+Kd 0.5 0.5 0.5
+
+newmtl _defaultMat
+Kd 1 0.928 0.809
+

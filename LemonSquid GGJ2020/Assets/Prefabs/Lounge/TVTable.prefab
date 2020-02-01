@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1436750917111961596}
+  - component: {fileID: 1720805210882451555}
   m_Layer: 0
   m_Name: TVTable
   m_TagString: Untagged
@@ -31,6 +32,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1720805210882451555
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2714268148805805551}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.250001, y: 0.3837764, z: 0.7215}
+  m_Center: {x: 2.5250006, y: 0.5018883, z: -0.5642501}
 --- !u!1 &3285525042699091959
 GameObject:
   m_ObjectHideFlags: 0

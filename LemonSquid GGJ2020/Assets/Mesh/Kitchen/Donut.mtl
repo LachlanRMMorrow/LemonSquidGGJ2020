@@ -1,0 +1,26 @@
+# Created by Kenney (www.kenney.nl)
+
+newmtl Dark_Wood
+Kd 0.592 0.447 0.318
+
+newmtl custom34
+Kd 0.586 0.04699998 0.02399999
+
+newmtl Oak_Leaves
+Kd 0.322 0.541 0.157
+
+newmtl metalDark
+Kd 0.4 0.388 0.647
+
+newmtl blueSteel
+Kd 0.027 0.4 0.694
+
+newmtl Straw
+Kd 0.841 0.627 0.06100001
+
+newmtl metalGreen
+Kd 0.04699999 0.847 0.6240001
+
+newmtl bricksDark
+Kd 0.878 0.271 0.271
+

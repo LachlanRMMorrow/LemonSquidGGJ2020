@@ -1,0 +1,11 @@
+# Created by Kenney (www.kenney.nl)
+
+newmtl Silver
+Kd 0.7922 0.7961 0.7725
+
+newmtl Medium_Wood
+Kd 0.7608 0.5765 0.4392
+
+newmtl Dark_Wood
+Kd 0.5922 0.4471 0.3176
+

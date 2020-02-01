@@ -1,0 +1,12 @@
+# Created by Kenney (www.kenney.nl)
+
+newmtl custom54
+Kd 0.7655172 0.7655172 0.7655172
+
+newmtl custom55
+Kd 0.2 0.2 0.2
+
+newmtl Counters
+Kd 0.048 0.048 0.048
+map_Kd Textures/Counters.png
+

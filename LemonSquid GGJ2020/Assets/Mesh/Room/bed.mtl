@@ -1,0 +1,14 @@
+# Created by Kenney (www.kenney.nl)
+
+newmtl _defaultMat
+Kd 0.8089969 0.8306743 0.9034483
+
+newmtl woodLight
+Kd 0.816 0.58 0.42
+
+newmtl wood
+Kd 0.749 0.443 0.345
+
+newmtl Window
+Kd 0.659 0.706 0.777
+

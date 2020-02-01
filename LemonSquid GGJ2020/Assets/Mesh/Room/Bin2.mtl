@@ -1,0 +1,8 @@
+# Created by Kenney (www.kenney.nl)
+
+newmtl Window
+Kd 0.659 0.706 0.777
+
+newmtl Dark_Red_Roof
+Kd 0.151 0.214 0.179
+

@@ -1,0 +1,12 @@
+# Created by Kenney (www.kenney.nl)
+
+newmtl Default
+Kd 0.469 0.469 0.469
+map_Kd Textures/Default.png
+
+newmtl Brass
+Kd 0.851 0.82 0.8
+
+newmtl custom11
+Kd 0.779 0.758 0.758
+

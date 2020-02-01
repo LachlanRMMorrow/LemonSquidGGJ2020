@@ -1,0 +1,8 @@
+# Created by Kenney (www.kenney.nl)
+
+newmtl Wood_Darker
+Kd 0.384 0.314 0.251
+
+newmtl _defaultMat
+Kd 1 0.928 0.809
+
