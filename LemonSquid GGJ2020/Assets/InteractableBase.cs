@@ -35,6 +35,7 @@ public class InteractableBase : MonoBehaviour
     {
         if (!InteractableManager.Instance.hasBrokenObject)
         {
+            UIManager.Instance.DisplayCurrentObjective(true);
             InteractableManager.Instance.SetBrokenObject(this); 
             return;
         }
