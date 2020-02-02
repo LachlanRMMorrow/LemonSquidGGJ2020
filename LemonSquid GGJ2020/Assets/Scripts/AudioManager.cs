@@ -50,6 +50,12 @@ public class AudioManager : SingletonBase<AudioManager>
     {
         yield return new WaitForSeconds(1);
         m_source.PlayOneShot(m_recordScreech);
+        StartCoroutine(MusicSwap());
+    }
+
+    IEnumerator MusicSwap() 
+    {
+        yield return new WaitForSeconds(1);
         BGMManager(2);
     }
 
@@ -75,7 +81,7 @@ public class AudioManager : SingletonBase<AudioManager>
             case 1:
                 m_BGMsource.clip = m_BGM1;
                 break;
-            case 2:
+            case 2:               
                 m_BGMsource.clip = m_BGM2;
                 break;
         }
