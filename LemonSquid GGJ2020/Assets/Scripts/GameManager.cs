@@ -1,16 +1,19 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GameManager : SingletonBase<GameManager>
 {
     public float countdownTimer = 30f;
     private bool timerOver;
     private bool timerStarted;
+    [SerializeField] TMPro.TextMeshProUGUI wastedText;
 
     // Start is called before the first frame update
     void Start()
     {
+        wastedText.enabled = false;
         timerOver = false;
         timerStarted = false;
     }
@@ -49,6 +52,7 @@ public class GameManager : SingletonBase<GameManager>
         if (success == false) 
         {
             timerOver = true;
+            wastedText.enabled = true;
         }
         else 
         {
