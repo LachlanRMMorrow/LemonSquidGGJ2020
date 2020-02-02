@@ -1,0 +1,9 @@
+# Created by Kenney (www.kenney.nl)
+
+newmtl Rose
+Kd 0.1862069 0.1726646 0.1726646
+map_Kd Textures/Rose.png
+
+newmtl Sunflower
+Kd 0.3724138 0.3724138 0.3724138
+
