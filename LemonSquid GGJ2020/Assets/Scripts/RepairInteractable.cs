@@ -13,6 +13,8 @@ public class RepairInteractable : InteractableBase
     public string itemName { get { return m_itemName; } }
     Rigidbody rb;
     Collider collider;
+
+    public GameObject sparkle;
     protected override void Setup()
     {
         base.Setup();
@@ -37,6 +39,7 @@ public class RepairInteractable : InteractableBase
     {
         rb.isKinematic = true;
         collider.enabled = false;
+        sparkle.SetActive(false);
     }
 
     public void Drop()
@@ -46,6 +49,7 @@ public class RepairInteractable : InteractableBase
 
         rb.AddForce(transform.parent.parent.forward * 200);
         transform.parent = null;
+        sparkle.SetActive(true);
     }
 
 }

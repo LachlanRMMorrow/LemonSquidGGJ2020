@@ -58,6 +58,10 @@ public class InteractableManager : SingletonBase<InteractableManager>
     [SerializeField] private List<Transform> spawnPoints = new List<Transform>();
 
     public GameObject rubblePrefab;
+    public GameObject sparkle;
+    public GameObject confetti;
+
+
     [SerializeField] private int spawnCount;
 
 
@@ -91,7 +95,9 @@ public class InteractableManager : SingletonBase<InteractableManager>
 
                 if (locationInfo != null)
                 {
-                    Instantiate(InteractableManager.Instance.repairRequired[i].item, locationInfo.position, locationInfo.rotation);
+                    RepairInteractable obj = Instantiate(InteractableManager.Instance.repairRequired[i].item, locationInfo.position, locationInfo.rotation);
+                    obj.sparkle = Instantiate(sparkle, locationInfo.position, locationInfo.rotation);
+                    obj.sparkle.transform.SetParent(obj.transform);
                 }
             }
         }
@@ -106,7 +112,9 @@ public class InteractableManager : SingletonBase<InteractableManager>
 
             if (locationInfo != null)
             {
-                Instantiate(GetRandomInteractable(), locationInfo.position, locationInfo.rotation);
+                RepairInteractable obj = Instantiate(GetRandomInteractable(), locationInfo.position, locationInfo.rotation).GetComponent<RepairInteractable>();
+                obj.sparkle = Instantiate(sparkle, locationInfo.position, locationInfo.rotation);
+                obj.sparkle.transform.SetParent(obj.transform);
             }
 
         }
