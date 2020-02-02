@@ -9,10 +9,15 @@ public class GameManager : SingletonBase<GameManager>
     private bool timerOver;
     private bool timerStarted;
     [SerializeField] TMPro.TextMeshProUGUI wastedText;
+    [SerializeField] TMPro.TextMeshProUGUI timerText;
+
+
+    public GameObject confetti;
 
     // Start is called before the first frame update
     void Start()
     {
+        timerText.text = "";
         wastedText.enabled = false;
         timerOver = false;
         timerStarted = false;
@@ -21,7 +26,7 @@ public class GameManager : SingletonBase<GameManager>
     // Update is called once per frame
     void Update()
     {
-        if (timerOver == false && timerStarted == true) 
+        if (timerOver == false && timerStarted == true)
         {
             Timer();
         }
@@ -31,7 +36,12 @@ public class GameManager : SingletonBase<GameManager>
     private void Timer()
     {
         countdownTimer -= Time.deltaTime;
-        if (countdownTimer <= 0) 
+
+        float minutes = Mathf.Floor(countdownTimer / 60);
+        float seconds = Mathf.Floor(countdownTimer % 60);
+        
+        timerText.text = minutes + ":" + seconds;
+        if (countdownTimer <= 0)
         {
             Debug.Log("HOMIE IS HOME");
             timerOver = true;
@@ -39,7 +49,7 @@ public class GameManager : SingletonBase<GameManager>
         }
     }
 
-    public void StartTimer() 
+    public void StartTimer()
     {
         timerStarted = true;
         AudioManager.Instance.PlayerScreech();
@@ -49,16 +59,18 @@ public class GameManager : SingletonBase<GameManager>
 
     public void Complete(bool success)
     {
-        if (!success) 
+        if (!success)
         {
             timerOver = true;
             wastedText.enabled = true;
             new WaitForSeconds(3);
-            Application.Quit();
-            Debug.Log("Quitting");
+            ScreenFade.Instance.Activate();
+            //Application.Quit();
+            //  Debug.Log("Quitting");
         }
-        else 
+        else
         {
+            confetti.SetActive(true);
             Debug.Log("KAZOO");
             AudioManager.Instance.PlayKazooForRealzies();
         }

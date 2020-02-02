@@ -83,7 +83,7 @@ public class InteractableManager : SingletonBase<InteractableManager>
 
     public void SpawnRepairObjects()
     {
-        seed = PlayerPrefs.GetString(playerName).GetHashCode();
+        seed = PlayerPrefs.GetString("PlayerName").GetHashCode();
         Random.seed = seed;
 
 
