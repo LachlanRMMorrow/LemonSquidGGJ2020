@@ -1,0 +1,6 @@
+# Created by Kenney (www.kenney.nl)
+
+newmtl custom28
+Kd 0.286 0.513 0.552
+map_Kd Textures/custom28.png
+

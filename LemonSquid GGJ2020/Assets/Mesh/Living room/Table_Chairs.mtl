@@ -1,0 +1,18 @@
+# Created by Kenney (www.kenney.nl)
+
+newmtl woodDark
+Kd 0.393 0.243 0.195
+map_Kd Textures/woodDark.png
+
+newmtl Wood_Darker
+Kd 0.366 0.297 0.256
+map_Kd Textures/Wood_Darker.png
+
+newmtl Medium_Wood
+Kd 0.483 0.359 0.266
+map_Kd Textures/Medium_Wood.png
+
+newmtl Dark_Wood
+Kd 0.531 0.429 0.338
+map_Kd Textures/Dark_Wood.png
+

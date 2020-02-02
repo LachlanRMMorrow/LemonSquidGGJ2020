@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6160556067208923296}
   m_Layer: 0
-  m_Name: TallShelf1
+  m_Name: TallShelf
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -42,6 +42,7 @@ GameObject:
   - component: {fileID: 6013446634886787922}
   - component: {fileID: 8100886559892591539}
   - component: {fileID: 8131146228709816429}
+  - component: {fileID: 2416946666303365828}
   m_Layer: 0
   m_Name: mergedBlocks
   m_TagString: Untagged
@@ -110,3 +111,16 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &2416946666303365828
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7716473607526539435}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.125, y: 2.1, z: 0.62700295}
+  m_Center: {x: 2.5, y: 1.25, z: -1.0535015}
