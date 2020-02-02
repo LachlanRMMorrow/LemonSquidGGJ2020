@@ -49,10 +49,13 @@ public class GameManager : SingletonBase<GameManager>
 
     public void Complete(bool success)
     {
-        if (success == false) 
+        if (!success) 
         {
             timerOver = true;
             wastedText.enabled = true;
+            new WaitForSeconds(3);
+            Application.Quit();
+            Debug.Log("Quitting");
         }
         else 
         {

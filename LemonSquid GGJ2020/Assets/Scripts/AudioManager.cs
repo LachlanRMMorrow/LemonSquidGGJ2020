@@ -64,7 +64,7 @@ public class AudioManager : SingletonBase<AudioManager>
         m_BGMsource.Pause();
         m_source.PlayOneShot(m_winkazoo);
         yield return new WaitForSeconds(3);
-        Debug.Log("KAZOO3");
+        Debug.Log("Quitting");
         Application.Quit();
     }
 
